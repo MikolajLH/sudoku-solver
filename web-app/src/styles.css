@@ -1,0 +1,69 @@
+body,
+html {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(183, 128, 235);
+}
+
+.container {
+    width: 33rem;
+    height: 33rem;
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+    background-color: black;
+    border-radius: 5px;
+}
+
+.sub {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: black;
+}
+
+input {
+    width: 80%;
+    height: 80%;
+    text-align: center;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.cell {
+    background-color: white;
+}
+
+.clicked {
+    background-color: black;
+}
+
+
+th {
+    background-color: blueviolet;
+}
+
+button {
+    width: 100%;
+    height: 7%;
+    background-color: aliceblue;
+    margin-top: 1%;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: rgb(174, 214, 248);
+}
