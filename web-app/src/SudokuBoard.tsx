@@ -43,7 +43,7 @@ export function SudokuBoard({ sudoku, update_cell }: { sudoku: SudokuT, update_c
                                                     <td key={`r${br * N + sr}-c${bc * N + sc}`} className={`cell${isClicked(cell_id(br, bc, sr, sc)) ? " clicked" : ""}`}
                                                         onBlur={_ => setClickedCell({ id: -1 })}
                                                         onClick={_ => setClickedCell({ id: cell_id(br, bc, sr, sc) })}>
-                                                        <input type="number"
+                                                        <input type="number" className={sudoku.board[br * N + sr][bc * N + sc] == 0 ? "empty" : ""}
                                                             value={sudoku.board[br * N + sr][bc * N + sc].toString()}
                                                             onChange={e => update_cell(br * N + sr, bc * N + sc, +e.target.value)}
                                                             min={1}
